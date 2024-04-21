@@ -21,10 +21,17 @@
         <profile>
             <id>dev</id>
             <properties>
-                <db.url>jdbc:h2:~/community</db.url>
-                <db.user>sa</db.user>
-                <db.password>123</db.password>
+                <db.url>jdbc:mysql://127.0.0.1:3306/</db.url>
+                <db.user>root</db.user>
+                <db.password>Mysql123.321</db.password>
+                <db.driver>com.mysql.cj.jdbc.Driver</db.driver>
             </properties>
+<!--            <properties>-->
+<!--                <db.url>jdbc:h2:~/community</db.url>-->
+<!--                <db.user>sa</db.user>-->
+<!--                <db.password>123</db.password>-->
+<!--                <db.driver>org.h2.Driver</db.driver>-->
+<!--            </properties>-->
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
@@ -34,7 +41,7 @@
             <properties>
                 <db.url>jdbc:mysql://127.0.0.1:3306/</db.url>
                 <db.user>root</db.user>
-                <db.password>root</db.password>
+                <db.password>Mysql123.321</db.password>
                 <db.driver>com.mysql.jdbc.Driver</db.driver>
             </properties>
         </profile>
@@ -77,7 +84,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.45</version>
+            <version>8.0.28</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -88,7 +95,7 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <version>1.4.199</version>
+            <version>2.1.210</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -143,12 +150,12 @@
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.45</version>
+                        <version>8.0.28</version>
                     </dependency>
                     <dependency>
                         <groupId>com.h2database</groupId>
                         <artifactId>h2</artifactId>
-                        <version>1.4.199</version>
+                        <version>2.1.210</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -164,12 +171,12 @@
                     <dependency>
                         <groupId>com.h2database</groupId>
                         <artifactId>h2</artifactId>
-                        <version>1.4.199</version>
+                        <version>2.1.210</version>
                     </dependency>
                     <dependency>
                         <groupId>mysql</groupId>
                         <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.45</version>
+                        <version>8.0.28</version>
                     </dependency>
                 </dependencies>
             </plugin>
